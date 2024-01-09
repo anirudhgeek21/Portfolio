@@ -1,28 +1,30 @@
-import { BrowserRouter as Router, Route,Routes} from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css';
-import Navbar from './components/Navbar'
-import Home from './components/Home';
-import Services from './components/Services';
-import About from './components/About';
-import Contact from './components/Contact';
+import Navbar from './components/Navbar';
+import Services from './Services';
 import Banner from './components/Landing_banner/Banner';
-import Aniflix from './components/Projects/Aniflix/Aniflix'
+import Aniflix from './components/Projects/Aniflix/Aniflix';
+import Airbnb from './components/Projects/Airbnb/Airbnb';
+import GetInTouch from './components/GetInTouch';
+import Contact_route from './Contact_route';
+import Home from './components/Home';
+import About from './components/About'
 
 function App() {
   return (
-    <div className="App ">
-    <Router>
-      <Navbar />
-      <Banner />
-      <Aniflix />
-      <Routes>
-        <Route path="/" exact component={Home} />
-        <Route path="/services" component={Services} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-      </Routes>
-    </Router>
+    <div className="App">
+      
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact_route />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        
+      
     </div>
   );
 }

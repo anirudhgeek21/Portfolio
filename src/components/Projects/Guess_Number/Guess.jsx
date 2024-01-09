@@ -1,11 +1,11 @@
 import React from 'react';
-import movieBg from './movie-bg.png';
-import movieLogo from './movie-inner.png';
-import movieInner from './moviein.png';
+import movieBg from './quiz_bg.png';
+import movieLogo from './quiz-logo.png';
+import movieInner from './Quiz-in.png';
 
-const MovieComponent = () => {
+const Guess = () => {
   return (
-    <div className="h-[1000px] bg-black w-full m-auto bg-cover bg-fixed mt-16 md:mt-32 pt-2" style={{ backgroundImage: `url(${movieBg})` }}>
+    <div className="h-[1000px] bg-black w-full m-auto bg-cover bg-fixed pt-2" style={{ backgroundImage: `url(${movieBg})` }}>
       <div className="bg-white rounded-xl w-11/12 md:w-8/12 xl:w-7/12 m-auto px-4 md:px-10 py-3 h-[600px] relative mt-44 md:my-44">
         <div className="h-[550px] mt-4">
           <div className="flex w-full md:w-6/12 justify-around text-left">
@@ -30,11 +30,11 @@ const MovieComponent = () => {
 
           <div className="flex w-full md:w-7/12 justify-around mt-6 md:mt-12 ml-0 md:ml-8">
             <div className="bg-purple-800 text-white px-7 py-3 rounded-full shadow-xl hover:bg-white hover:text-purple-800 duration-700 hover:shadow-black hover:shadow-md">
-              <h1><strong><a href="https://anirudhgeek21.github.io/Anirudh-Flix/">View Project</a></strong></h1>
+              <h1><strong><a href="https://anirudhgeek21.github.io/Guess-My-Number/">View Project</a></strong></h1>
             </div>
 
             <div className="bg-black text-white px-7 py-3 rounded-full shadow-xl hover:bg-white hover:text-black duration-700 hover:shadow-black hover:shadow-md">
-              <h1><strong><a href="https://github.com/anirudhgeek21/Anirudh-Flix">Github Link</a></strong></h1>
+              <h1><strong><a href="https://github.com/anirudhgeek21/Guess-My-Number">Github Link</a></strong></h1>
             </div>
           </div>
         </div>
@@ -47,4 +47,4 @@ const MovieComponent = () => {
   );
 };
 
-export default MovieComponent;
+export default Guess;
