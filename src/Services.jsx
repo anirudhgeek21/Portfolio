@@ -12,7 +12,7 @@ function Services() {
   return (
     <div className="App">
       
-      <Navbar />
+      <Navbar  bg2 = "white"/>
         <Routes>
         <Route path="/home" element={<Home />} /> 
           <Route path="/about" element={<About />} /> 

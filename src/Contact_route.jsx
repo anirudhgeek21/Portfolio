@@ -16,7 +16,7 @@ function Contact_route() {
   servicesColor="white"
   aboutColor="white"
   contactColor="white"
-  
+  bg2 = "black"
   navbarBackgroundColor="#9333EA" />
         <Routes>
         <Route path="/home" element={<Home />} /> 

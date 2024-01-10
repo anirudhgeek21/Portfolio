@@ -5,7 +5,7 @@ import movieInner from './moviein.png';
 
 const MovieComponent = () => {
   return (
-    <div className="h-[1000px] bg-black w-full m-auto bg-cover bg-fixed mt-16 md:mt-32 pt-2" style={{ backgroundImage: `url(${movieBg})` }}>
+    <div className="h-[1000px] bg-black w-full m-auto md:bg-cover bg-contain bg-fixed mt-16 md:mt-32 pt-2" style={{ backgroundImage: `url(${movieBg})` }}>
       <div className="bg-white rounded-xl w-11/12 md:w-8/12 xl:w-7/12 m-auto px-4 md:px-10 py-3 h-[600px] relative mt-44 md:my-44">
         <div className="h-[550px] mt-4">
           <div className="flex w-full md:w-6/12 justify-around text-left">

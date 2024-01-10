@@ -10,13 +10,14 @@ import Airbnb from './Projects/Airbnb/Airbnb';
 import GetInTouch from './GetInTouch';
 import Contact from './Contact';
 import About from './About';
-import Guess from './Projects/Guess_Number/Guess'
+import Guess from './Projects/Guess_Number/Guess';
+import MoreProjects from './Projects/More/MoreProjects'
 
 function Home() {
   return (
     <div className="App">
       
-      <Navbar />
+      <Navbar  bg2 = "white"/>
         <Routes>
           <Route path="/about" element={<About />} /> 
           <Route path="/services" element={<Services />} />
@@ -26,8 +27,10 @@ function Home() {
         <Aniflix />
         <Airbnb />
         <Guess />
+        <MoreProjects />
         <GetInTouch />
-      
+
+       
     </div>
   );
 }

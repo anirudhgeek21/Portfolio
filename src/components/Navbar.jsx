@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
-  const { homeColor, servicesColor, aboutColor, contactColor, navbarBackgroundColor } = props;
-  const [menuOpen, setMenuOpen] = useState(true);
+  const { homeColor, servicesColor, aboutColor, contactColor, navbarBackgroundColor,bg2 } = props;
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -19,10 +19,10 @@ const Navbar = (props) => {
       </div>
 
       {/* Responsive Hamburger Menu */}
-      <div className="md:hidden">
+      <div className="">
         <button className="text-purple-800" onClick={toggleMenu}>
           <svg
-            className="w-8 h-8 mt-12 z-50 absolute top-0 right-3"
+            className="w-8 h-8 mt-12  md:mt-[3.5rem] md:mr-6 z-50 absolute top-0 right-3"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -39,7 +39,7 @@ const Navbar = (props) => {
       </div>
 
       {/* Menu Items */}
-      <div className={`w-full md:w-[44%] text-center m-auto md:flex justify-around bg-white md:bg-inherit ${menuOpen ? 'visible' : 'invisible'} lg:text-[110%] z-[999]`}>
+      <div className={`w-full md:w-[44%] text-center md:m-auto md:flex justify-around bg-${bg2} md:bg-inherit ${menuOpen ? 'visible' : 'invisible'} lg:text-[110%] z-[999] m-auto mt-[-6%]`}>
         <div className="mb-4 md:mb-0">
           <Link to="/" style={{ color: homeColor }} onClick={toggleMenu}>
             <h1 className="hover:text-purple-800 pt-5 md:pt-0"><strong>HOME</strong></h1>
