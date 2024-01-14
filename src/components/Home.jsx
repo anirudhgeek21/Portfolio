@@ -9,7 +9,7 @@ import Aniflix from './Projects/Aniflix/Aniflix';
 import Airbnb from './Projects/Airbnb/Airbnb';
 import GetInTouch from './GetInTouch';
 import Contact from './Contact';
-import About from './About';
+import About from '../About_route';
 import Guess from './Projects/Guess_Number/Guess';
 import MoreProjects from './Projects/More/MoreProjects'
 

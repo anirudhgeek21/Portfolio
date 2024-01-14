@@ -10,7 +10,7 @@ import Airbnb from './components/Projects/Airbnb/Airbnb';
 import GetInTouch from './components/GetInTouch';
 import Contact_route from './Contact_route';
 import Home from './components/Home';
-import About from './components/About'
+import About from './About_route'
 
 function App() {
   return (

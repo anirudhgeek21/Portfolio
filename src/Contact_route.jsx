@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import Service from './components/Service';
 import Home from './components/Home';
 import Contact from './components/Contact';
-import About from './components/About'
+import About from './About_route'
 
 function Contact_route() {
   return (
