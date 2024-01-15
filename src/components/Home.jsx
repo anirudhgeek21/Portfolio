@@ -11,7 +11,9 @@ import GetInTouch from './GetInTouch';
 import Contact from './Contact';
 import About from '../About_route';
 import Guess from './Projects/Guess_Number/Guess';
-import MoreProjects from './Projects/More/MoreProjects'
+import MoreProjects from './Projects/More/MoreProjects';
+import More_slide from './Projects/More/More_slide';
+import Footer from './Footer';
 
 function Home() {
   return (
@@ -24,11 +26,19 @@ function Home() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Banner />
-        <Aniflix />
-        <Airbnb />
-        <Guess />
-        <MoreProjects />
+        <div className='hidden lg:inline'>
+            <Aniflix />
+            <Airbnb />
+            <Guess />
+        </div>
+        <More_slide />
         <GetInTouch />
+        <Footer />
+        <div className="copyright fixed bottom-0 bg-black text-white text-center w-full py-1 font-mono">
+        <p>&copy; <strong>2023 All rights reserved</strong></p>
+      </div>
+
+
 
        
     </div>

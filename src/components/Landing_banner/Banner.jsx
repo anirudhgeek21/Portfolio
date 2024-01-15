@@ -3,7 +3,7 @@ import handshakeImage from './handshake.png';
 
 const MyComponent = () => {
   return (
-    <div className="text-center md:m-auto md:mt-8 z-50 mt-[-20%]">
+    <div className="text-center md:m-auto md:mt-8 z-50 mt-[-14%]">
       <h1 className="text-5xl md:text-5xl lg:text-7xl md:mt-44 md:p-0 p-[3%]">
         <strong>
           CODE THAT,{' '}

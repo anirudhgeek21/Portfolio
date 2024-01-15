@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactComponent = () => {
   return (
-    <div className="mt-20 md:mt-40 bg-fixed w-full h-[1000px] md:h-[1220px] bg-cover m-auto bg-center bg-gradient-to-r from-violet-600 to-purple-600">
+    <div className="mt-0 md:mt-0 bg-fixed w-full h-[1000px] md:h-[1220px] bg-cover m-auto bg-center bg-gradient-to-r from-violet-600 to-purple-600">
       <div className="w-full md:w-6/12 mx-auto mb-12 relative pt-20 md:ml-[29%] px-6">
         <h1 className="w-full md:w-6/12 pt-10 md:pt-32 mb-4 md:mb-9 text-3xl md:text-5xl text-white font-inter">Get in touch !</h1>
         <button className="bg-violet-600 border-white text-white border-solid border-2 text-lg md:text-xl hover:py-2 hover:px-4 duration-500 shadow-lg rounded-2xl px-4 md:px-5 py-2 font-inter">
