@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ContactComponent = () => {
   return (
@@ -6,7 +7,10 @@ const ContactComponent = () => {
       <div className="w-full md:w-6/12 mx-auto mb-12 relative pt-20 md:ml-[29%] px-6">
         <h1 className="w-full md:w-6/12 pt-10 md:pt-32 mb-4 md:mb-9 text-3xl md:text-5xl text-white font-inter">Get in touch !</h1>
         <button className="bg-violet-600 border-white text-white border-solid border-2 text-lg md:text-xl hover:py-2 hover:px-4 duration-500 shadow-lg rounded-2xl px-4 md:px-5 py-2 font-inter">
-          <strong>About Me</strong>
+          
+          <Link to="/about">
+            <strong>About Me</strong>
+          </Link>
         </button>
         <img className="absolute w-[13rem] md:w-80 top-[5.5rem] md:top-[6.9rem] left-[42%]  md:left-[20.8rem]" src="https://static.wixstatic.com/media/b313a9_24e7e303ef0a483db82a780349e01dc2~mv2.png/v1/fill/w_424,h_392,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/shutterstock_1987145684_edited.png" alt="" />
       </div>

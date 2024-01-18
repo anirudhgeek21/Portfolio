@@ -14,6 +14,8 @@ import Guess from './Projects/Guess_Number/Guess';
 import MoreProjects from './Projects/More/MoreProjects';
 import More_slide from './Projects/More/More_slide';
 import Footer from './Footer';
+import More_Mobile from './Projects/More_copy/More_mobile_only';
+import Project_Mobile from './Projects/More_copy/Projects_Mobileonly';
 
 function Home() {
   return (
@@ -21,6 +23,7 @@ function Home() {
       
       <Navbar  bg2 = "white"/>
         <Routes>
+            
           <Route path="/about" element={<About />} /> 
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
@@ -31,7 +34,15 @@ function Home() {
             <Airbnb />
             <Guess />
         </div>
-        <More_slide />
+        <div className='md:inline hidden'>
+            <More_slide />
+        </div>
+        <div className='inline md:hidden'>
+            <Project_Mobile />
+        </div>
+        <div className='inline md:hidden'>
+            <More_Mobile />
+        </div>
         <GetInTouch />
         <Footer />
         <div className="copyright fixed bottom-0 bg-black text-white text-center w-full py-1 font-mono">
